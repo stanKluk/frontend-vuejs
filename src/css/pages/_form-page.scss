@@ -1,0 +1,215 @@
+/************************************************************************************
+	PAGES DE FORMULAIRES
+************************************************************************************/
+
+body.form [class*=kiss-container] {
+    padding-top: 30px;
+}
+
+@media (max-width: 767px) {
+	body.form .container-fluid {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	body.form [class*=kiss-container] {
+		padding-top: 10px;
+	}
+	.form-content .form-title {
+		padding-top: 15px;
+	}
+}
+
+
+/************************************************************************************
+	CONTENEURS DES FORMUALIRES
+************************************************************************************/
+
+/*******************************
+*** Conteneur principal ***/
+
+.form-content {
+    padding: 25px 35px 30px;
+    background: $sy-form-container-bg;
+    display: block;
+    border-radius: $sy-main-border-radius;
+    clear: both;
+}
+
+.form-content .form-title {
+    padding-bottom: 1rem;
+}
+
+.form-content .form-title h2 {
+    margin: 0 0 10px;
+}
+
+.form-content .text-title,
+.form-content .img-title {
+    text-align: right;
+	font-weight: $sy-font-weight-bold;
+}
+
+.form-content .row.action {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.form-content .action-border {
+    padding-top: 30px;
+    border-top: 1px solid $sy-main-border-color;
+}
+
+.form-content .action-no-border {
+    padding-top: 30px;
+}
+
+@media (max-width: 1199px) {
+	.x-large-kiss-container .form-content	{
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-content {
+		padding: 15px;
+		border-radius: 0 !important;
+    }
+	.form-content .text-title {
+		text-align: left;
+	}
+}
+
+/*******************************
+*** Conteneur secondaire ***/
+
+.form-block {
+    margin-bottom: 2rem !important;
+}
+
+.form-block:last-child {
+    margin-bottom: 0 !important;
+}
+
+.form-block .btn,
+.form-block .dropdown-menu {
+    font-size: .9rem;
+}
+
+.form-block .btn{
+    padding: .45rem .75rem;
+}
+
+.form-block .dropdown-toggle{
+    font-weight: $sy-font-weight-bold;
+}
+
+
+/************************************************************************************
+	BARRE D'ACTION
+************************************************************************************/
+
+/* Barre d action contenant les boutons */
+.button-bar {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.button-bar .btn {
+    margin-left: 5px;
+}
+
+@media (max-width: 767px) {
+    .button-bar {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .button-bar .btn {
+        margin: 0 0 5px 0;
+        width: 100%;
+    }
+}
+
+/************************************************************************************
+	BLOC UPLOAD DE DOCUMENTS
+************************************************************************************/
+
+.upload-document {
+    border: $sy-alert-default-border;
+    background: $sy-alert-default-bg;
+    border-radius: $sy-main-border-radius;
+	font-weight: $sy-font-weight-bold;
+    padding: 30px 24px 26px 24px;
+}
+
+.upload-document-text img {
+	float: left;
+	margin-right: 15px;
+}
+
+.upload-document-text p{
+	margin-bottom: 0;
+}
+
+.upload-document-button .form-group {
+	float: right;
+	margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+	.upload-document {
+		padding: 10px 10px 6px 10px;
+	}
+    .upload-document-text p {
+        display: none;
+    }
+	.upload-document-button {
+		padding-top: 4px;
+	}
+}
+
+/************************************************************************************
+	DIVERS
+************************************************************************************/
+
+/*******************************
+*** Avatar ***/
+
+.user-avatar {
+	width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+/*******************************
+*** Champs requis ***/
+
+/* Ajouter * si le champs est required */
+.form-group.required label:after,
+.form-group label span.required:after {
+    font-weight: normal;
+    font-size: 14px;
+    content: '*';
+    margin-left: 4px;
+    color: #333;
+    font-weight: 600;
+}
+
+.form-group.field-error.required label:after {
+    color: $danger;
+}
+
+/* Mentions en bas des pages  */
+.required-container .required-fields {
+    text-align: center;
+    font-size: $sy-font-size-xxs;
+    color: rgba(255,255,255,.8);
+    font-weight: $sy-font-weight-normal;
+    line-height: 30px;
+}
+
+@media (max-width: 767px) {
+	.required-container .required-fields {
+		background: $white;
+		color: $sy-body-color;
+	}
+}

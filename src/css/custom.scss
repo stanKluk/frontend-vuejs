@@ -1,0 +1,12 @@
+//boostrap core scss
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import '../../node_modules/bootstrap-vue/src/index.scss';
+
+//ag-grid scss
+@import '../../node_modules/ag-grid-community/src/styles/ag-grid.scss';
+@import '../../node_modules/ag-grid-community/src/styles/ag-theme-balham/sass/ag-theme-balham.scss';
+
+//custom sy and grid scss
+@import 'sy-main.scss';
+@import 'ag-grid/main-ag-grid-variables';
+@import 'ag-grid/sy-grid';

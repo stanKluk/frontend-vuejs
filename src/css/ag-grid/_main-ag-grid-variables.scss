@@ -1,0 +1,36 @@
+//
+// Style la grille ag-grid aux couleurs de SY
+//
+// Pour utiliser ce style, il faut :
+// 1- Modifier le style sur la grille : ag-theme-balham (c'est ce thème que l'on a surchargé)
+// 2- Modifier la hauteur des lignes sur la grille : rowHeight="50" - headerHeight="50"
+//
+
+$ag-icons-path: './icons/';
+$icon-color: white;
+// --Ne fonctionne pas pour avoir la flêche de tri en blanc
+//$grid-size: 8px;
+
+$header-height: 50px;
+$row-height: 50px;
+$font-size: 12px;
+$font-family: 'Open Sans', sans-serif;
+
+$header-background-color: #7b797a;
+$foreground-color: #666;
+$secondary-foreground-color: white;
+$secondary-font-size: 12px;
+$secondary-font-weight: 600;
+
+$grid-border-radius: 5px;
+
+.ag-header {
+    border-top-left-radius: $grid-border-radius;
+    border-top-right-radius: $grid-border-radius;
+}
+
+.ag-root {
+    border-radius: $grid-border-radius;
+}
+
+$shadowed: 0 1px 2px rgba(0,0,0,.25); // Ombres des conteneurs : Blocs (tile) des dashboards - Colonnes de notifications - Tableaux grid

@@ -1,0 +1,172 @@
+// COLORS
+$primary: #21b8cf;	// Base : Liens - Composants Primary (btn, badge, alertes, bg) - Form Border Focus - Main Nav hover & active -  Main Nav submenu - Blocs Dashboard
+$primary-saturate: saturate($primary, 35%);
+$secondary: #696d72;
+$success: #5db75d;
+$info: #31728e;
+$warning: #ff9317;
+$danger: #f74c4c;
+$white: #fff;
+$black: #000;
+$purple: #463659;
+$gray: #626262;
+$gray-dark: #333;	// Base : Body color - H2 H3 color
+$light: #f1f4f8;	// Base : Body BG - H3.title-border BG - Bordures des lignes des tableaux grid - BG Dropdown hover et selected - BG Form Disabled - Main Borders - BG messages - badge default
+$light-desaturate: desaturate($light, 25%);
+$dark: #494c4f;		// Base : Main Nav - Entêtes des tableaux
+
+// BODY
+$sy-body-bg: $light;
+$sy-body-color: $gray-dark;
+$sy-body-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif,'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+// TYPO
+$sy-font-size-xxxl: 1.5rem;			// 24px
+$sy-font-size-xxl: 	1.375rem;		// 22px
+$sy-font-size-xl: 	1.25rem;		// 20px
+$sy-font-size-lg: 	1.125rem;		// 18px
+$sy-font-size-nm: 	1rem;			// 16px Base
+$sy-font-size-sm: 	0.875rem;		// 14px
+$sy-font-size-xs: 	0.8125rem;		// 13px
+$sy-font-size-xxs: 	0.75rem;		// 12px
+$sy-font-size-xxxs: 0.625rem;		// 10px
+$sy-font-weight-black: 	900;
+$sy-font-weight-bolder: 700;
+$sy-font-weight-bold: 	600;
+$sy-font-weight-normal:	400;
+$sy-font-weight-thin: 	300;
+
+// MAIN STYLES
+$sy-main-bg-hover: darken($light, 1%);
+$sy-main-bg-selected: darken($light, 5%);
+$sy-main-border-color: darken($light-desaturate, 15%);
+$sy-main-border-color-light: lighten($sy-main-border-color, 5%);
+$sy-main-border-color-ultra-light: lighten($sy-main-border-color, 7%);
+$sy-main-border-color-dark: darken($light-desaturate, 26%);
+$sy-main-border-radius: 4px; // Buttons - Input - Badge - Conteneurs Message
+$sy-main-action-icon-color: $gray; // Icones d'action
+$sy-main-action-icon-color-hover: darken($sy-body-color, 20%);
+
+// HEADINGS
+$sy-h2-color: $gray-dark;
+$sy-h3-color: $gray-dark;
+$sy-h3-bg: darken($light, 10%); // H3.title-border - Titres avec background
+
+// LINKS
+$sy-link-color: $primary;
+$sy-link-color-hover: $black;
+$sy-link-hover-decoration: underline;
+$sy-link-font-weight: $sy-font-weight-bold;
+$sy-link-transition: all 0.3s ease 0s;
+
+// BUTTONS
+$sy-btn-color: $white;
+$sy-btn-font-size: $sy-font-size-nm;
+$sy-btn-font-weight: $sy-font-weight-bold;
+$sy-btn-box-shadow: 1px 1px 1px 0 rgba(0,0,0,.1),1px 1px 3px 0 rgba(0,0,0,.2);
+$sy-btn-opacity-disabled: 0.6;
+// Primary
+$sy-btn-primary-color: $white;
+$sy-btn-primary-bg: $primary;
+$sy-btn-primary-bg-hover: lighten($primary, 3%);
+$sy-btn-primary-border: 1px solid $primary;
+$sy-btn-primary-box-shadow-hover: 1px 6px 6px 0 rgba(0,0,0,.1),1px 6px 6px 0 rgba(0,0,0,.1);
+$sy-btn-primary-transition: all .4s;
+// Secondary
+$sy-btn-secondary-color: $white;
+$sy-btn-secondary-bg: $secondary;
+$sy-btn-secondary-border: 1px solid $secondary;
+$sy-btn-secondary-bg-hover: darken($sy-btn-secondary-bg, 10%);
+// Default
+$sy-btn-default-color: $gray-dark;
+$sy-btn-default-bg: $white;
+$sy-btn-default-bg-hover: lighten($light, 1%);
+// Default border : .btn-default - .ng-select .ng-select-container - select
+$sy-btn-default-border-width: 1px;
+$sy-btn-default-border-style: solid;
+$sy-btn-default-border-color: $sy-main-border-color-ultra-light transparent transparent $sy-main-border-color-ultra-light;
+
+// TABLES - GRID
+$sy-grid-thead-bg: lighten($dark, 19%);
+$sy-grid-thead-bg-hover: rgba(0, 0, 0, 0.15);
+$sy-grid-thead-bg-focus: rgba(0, 0, 0, 0.3);
+$sy-grid-thead-color: $white;
+$sy-grid-line-bg-odd: $sy-main-bg-hover; 	// Couleur de lignes alternées 1
+$sy-grid-line-bg-even: $white;				// Couleur de lignes alternées 2
+$sy-grid-line-bg-hover: $sy-main-bg-selected;
+$sy-grid-line-border-color: $sy-main-border-color-light;
+
+// FORMS
+$sy-form-container-bg: $sy-body-bg;
+$sy-form-bg: $white;
+$sy-form-height: 38px;
+$sy-form-box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 0 1px $white, 0 1px 0 $white;
+$sy-form-box-shadow-focus: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+$sy-form-border: 1px solid $sy-main-border-color;
+$sy-form-border-focus: 1px solid $primary;
+$sy-form-bg-disabled: darken($light, 3%);
+$sy-form-border-disabled: 1px solid darken($light, 3%);
+$sy-form-transition: all .4s;
+$sy-form-cursor-disabled: default;
+$sy-form-placeholder-color: #949494;
+// Listes déroulantes : Dropdown - Select
+$sy-dropdown-box-shadow: $sy-btn-box-shadow;
+$sy-dropdown-menu-hover: $sy-main-bg-hover;
+$sy-dropdown-menu-selected: $sy-main-bg-selected;
+$sy-dropdown-menu-box-shadow: 0 6px 12px rgba(0,0,0,.15);
+// Champs : Text - Password - Email - Number - Textarea etc.
+$sy-form-text-border: 1px solid transparent;
+$sy-form-text-border-bottom: 1px solid $sy-main-border-color-light;
+// Tags input
+$sy-tags-input-container-padding: .25rem .25rem;
+
+// TOOLTIPS
+$sy-tooltip-color: $white;
+$sy-tooltip-bg: rgba(65,65,65,.95);
+$sy-tooltip-border-color: rgba(65,65,65,0);
+
+// BADGES
+$sy-badge-color: $white;
+$sy-badge-default-bg: $white;
+$sy-badge-default-color: $gray-dark;
+$sy-badge-default-border: 1px solid $sy-main-border-color;
+
+// ALERTES
+$sy-alert-default-bg: lighten($sy-body-bg, 3%);
+$sy-alert-default-border: 1px dashed $sy-main-border-color-light;
+$sy-alert-primary-bg: lighten($primary, 46%);
+$sy-alert-primary-border: 1px dashed darken($sy-alert-primary-bg, 8%);
+$sy-alert-success-bg: lighten($success, 36%);
+$sy-alert-success-border: 1px dashed darken($sy-alert-success-bg, 8%);
+$sy-alert-info-bg: lighten($info, 53%);
+$sy-alert-info-border: 1px dashed darken($sy-alert-info-bg, 8%);
+$sy-alert-warning-bg: lighten($warning, 38%);
+$sy-alert-warning-border: 1px dashed darken($sy-alert-warning-bg, 8%);
+$sy-alert-danger-bg: lighten($danger, 29%);
+$sy-alert-danger-border: 1px dashed darken($sy-alert-danger-bg, 8%);
+
+// MODALS
+$sy-modal-bg: $sy-body-bg;
+// Modal Discussion
+$sy-modal-chat-message-em-bg: $sy-alert-primary-bg;
+$sy-modal-chat-message-re-bg: $sy-alert-success-bg;
+$sy-modal-chat-new-message-bg: $success;
+$sy-modal-chat-new-message-color: $white;
+
+// MAIN NAV
+// Navbar Up
+$sy-main-nav-up-bg: $dark;
+$sy-main-nav-up-bg-hover: darken($dark, 10%);
+$sy-main-nav-up-color: rgba(255,255,255,.65);
+$sy-main-nav-up-color-hover: $white;
+// Navbar Down
+$sy-main-nav-down-bg: $primary;
+$sy-main-nav-down-bg-hover: darken($primary, 3%);
+$sy-main-nav-down-bg-active: darken($primary, 6%);
+$sy-main-nav-down-menu-bg: darken($primary, 10%);
+$sy-main-nav-down-menu-bg-hover: darken($primary, 24%);
+$sy-main-nav-down-menu-divider: darken($primary, 16%);
+
+// MISC
+$sy-shadowed: 0 1px 2px rgba(0,0,0,.25); // Ombres des conteneurs : Blocs (tile) des dashboards - Colonnes de notifications - Tableaux grid
+$sy-tile-transition: all 0.2s ease-out; // Transition des blocs dans les dashboards

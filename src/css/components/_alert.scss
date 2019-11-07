@@ -1,0 +1,33 @@
+/************************************************************************************
+	ALERTS
+************************************************************************************/
+
+.alert-success {
+    color: darken($success,30%) !important;
+    background-color: $sy-alert-success-bg;
+    border: $sy-alert-success-border;
+}
+
+.alert-info {
+    color: darken($info,17%) !important;
+    background-color: $sy-alert-info-bg;
+    border: $sy-alert-info-border;
+}
+
+.alert-warning {
+    color: darken($warning,33%) !important;
+    background-color: $sy-alert-warning-bg;
+    border: $sy-alert-warning-border;
+}
+
+.alert-danger {
+    color: darken($danger,37%) !important;
+    background-color: $sy-alert-danger-bg;
+	border: $sy-alert-danger-border;
+}
+
+.alert-default {
+    color: $sy-body-color;
+    background-color: $sy-alert-default-bg;
+    border: $sy-alert-default-border;
+}

@@ -1,0 +1,16 @@
+/************************************************************************************
+	TOASTS
+************************************************************************************/
+
+.toast-header {
+    color: $sy-body-color;
+    background-color: rgba(255,255,255,.65);
+    border-bottom: 1px solid transparent;
+}
+
+.bg-primary .toast-body,
+.bg-success .toast-body,
+.bg-danger .toast-body,
+.bg-info .toast-body {
+	color: $sy-badge-color;
+}

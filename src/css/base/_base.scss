@@ -1,0 +1,207 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+	background: $sy-body-bg;
+	color: $sy-body-color;
+    font-family: $sy-body-font-family;
+	font-size: .9rem;
+	padding-top: 120px;
+}
+
+@media (max-width: 991px) {
+	body {
+		padding-top: 90px;
+	}
+}
+
+b,strong {
+	font-weight: $sy-font-weight-bolder;
+}
+
+::selection {
+    background: darken($primary,20%);
+    color: $white;
+}
+
+/************************************************************************************
+	HEADINGS
+************************************************************************************/
+
+h1,h2,h3,
+.h1,.h2,.h3 {
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: $sy-font-weight-normal;
+    letter-spacing: -1px;
+    color: $sy-h2-color;
+    margin: 0 0 1.25rem;
+}
+
+h3 {
+    font-size: 1.125rem;
+    font-weight: $sy-font-weight-bold;
+    color: $sy-h2-color;
+}
+
+/* Custom title */
+h3.title-border {
+    padding: 10px!important;
+    background: $sy-h3-bg;
+    border-radius: $sy-main-border-radius;
+    width: 100%;
+    margin: 0.875rem 0 0.75rem;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: $sy-font-weight-bolder;
+    color: $sy-h3-color;
+}
+
+@media (max-width: 767px) {
+	h2 {
+		font-size: 1.5rem;
+	}
+	h3 {
+		font-size: 1rem;
+	}
+}
+
+
+/************************************************************************************
+	LINKS
+************************************************************************************/
+
+a {
+	color: $sy-link-color;
+    transition: $sy-link-transition;
+    outline: none !important;
+    cursor: pointer;
+	font-weight: $sy-font-weight-bold;
+}
+
+a:hover {
+	color: $sy-link-color-hover;
+	text-decoration: $sy-link-hover-decoration;
+    cursor: pointer;
+}
+
+
+/************************************************************************************
+	UTILITIES
+************************************************************************************/
+
+/*******************************
+*** Background color ***/
+
+.bg-primary {
+    background-color: $primary!important;
+}
+
+.bg-secondary {
+    background-color: $secondary!important;
+}
+
+.bg-default {
+    background-color: $light!important;
+}
+
+.bg-success {
+    background-color: $success!important;
+}
+
+.bg-info {
+    background-color: $info !important;
+}
+
+.bg-warning {
+    background-color: $warning!important;
+}
+
+.bg-danger {
+    background-color: $danger!important;
+}
+
+.bg-purple {
+	background-color: $purple!important;
+}
+
+.rgba-black-strong,
+.rgba-black-strong:after {
+    background-color: rgba(0,0,0,.7);
+}
+
+/*******************************
+*** text color ***/
+
+.text-primary {
+    color: $primary!important;
+}
+
+.text-secondary {
+    color: $secondary!important;
+}
+
+.text-success {
+    color: $success!important;
+}
+
+.text-info {
+    color: $info !important;
+}
+
+.text-warning {
+    color: $warning!important;
+}
+
+.text-danger {
+    color: $danger!important;
+}
+
+/*******************************
+*** Border color ***/
+
+.border-primary {
+    border-color: $primary!important;
+}
+
+.border-secondary {
+    border-color: $secondary!important;
+}
+
+.border-success {
+    border-color: $success!important;
+}
+
+.border-info {
+    border-color: $info !important;
+}
+
+.border-warning {
+    border-color: $warning!important;
+}
+
+.border-danger {
+	border-color: $danger!important;
+}
+
+/*******************************
+*** Shadowed ***/
+
+.shadowed {
+    box-shadow: 0 1px 2px rgba(0,0,0,.25);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: .25rem;
+}

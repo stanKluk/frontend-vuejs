@@ -1,0 +1,51 @@
+/************************************************************************************
+	CARDS
+************************************************************************************/
+
+.card {
+    box-shadow: $sy-shadowed;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: $white;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: .25rem;
+}
+
+.card[class*=bg-] {
+	border-width: 1px;
+}
+
+.card[class*=border-] {
+	border-width: 1px;
+}
+
+.card-header {
+    background-color: $sy-main-bg-hover;
+    border-bottom: 1px solid $sy-main-border-color-ultra-light;
+}
+
+.card-header-tabs {
+    margin-right: -.625rem;
+    margin-bottom: -.75rem;
+    margin-left: -.625rem;
+    border-bottom: none;
+}
+
+.card .image {
+    position: relative;
+    overflow: hidden;
+}
+
+.card .btn.floating {
+    margin-top: -24px;
+    margin-bottom: -24px;
+    margin-right: 24px !important;
+    margin-left: auto !important;
+}

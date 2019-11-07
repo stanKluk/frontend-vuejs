@@ -1,0 +1,47 @@
+/************************************************************************************
+	NAV-TABS
+************************************************************************************/
+
+.nav-tabs {
+    border-bottom: 2px solid $sy-main-border-color;
+    margin-bottom: 15px;
+}
+
+.nav-tabs .nav-link {
+    font-size: 1rem;
+    color: $sy-form-placeholder-color;
+    font-weight: $sy-font-weight-bold;
+    border: 1px solid transparent;
+    border-bottom: 1px solid $sy-main-border-color;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+	padding: 10px 25px;
+    transition: $sy-link-transition;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+	border-color: $sy-main-bg-selected;
+    background: $sy-main-bg-selected;
+    color: $sy-btn-default-color;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: $sy-btn-default-color;
+    background-color: $sy-btn-default-bg;
+    border-color: $sy-main-border-color-ultra-light $sy-main-border-color-ultra-light transparent;
+    border-bottom: 1px solid $primary;
+    cursor: default;
+}
+
+
+/************************************************************************************
+	NAV-PILLS
+************************************************************************************/
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: $white;
+    background-color: $sy-btn-primary-bg;
+}

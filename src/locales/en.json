@@ -1,0 +1,97 @@
+{
+  "header" : {
+    "menu" : {
+      "application" : {
+        "search" : "Search",
+        "components" : {
+          "aggrid" : "AG Grid"
+        }
+      },
+      "global" : {
+        "language" : {
+          "dropdown" : "Language",
+          "en" : "EN",
+          "fr" : "FR"
+        }
+      },
+      "account" : {
+        "user" : {
+          "profile" : "My account",
+          "enterprises" : "Enterprises",
+          "management" : {
+            "groups" : "Groups management",
+            "users" : "Users management"
+          }
+        }
+      }
+    }
+  },
+  "view" : {
+    "notFound" : {
+      "title" : "404 - Page not found",
+      "body" : "This page does not exist.",
+      "backlink" : "Back to home page"
+    },
+    "forbidden" : {
+      "title" : "403 - Forbidden action",
+      "body" : "This action is not allowed.",
+      "backlink" : "Back to home page"
+    },
+    "login" : {
+      "title" : "Welcome",
+      "input" : {
+        "username" : "User name (or email)",
+        "password" : "Password"
+      },
+      "button" : {
+        "login" : "Login"
+      },
+      "link": {
+        "help" : "Need help",
+        "lost_username" : "I lost my user name",
+        "lots_password" : "I lost my password"
+      },
+      "message" : {
+        "required_fields" : "Fields with * are required",
+        "authentication_failed" : "Authentication failed"
+      },
+      "label" : {
+        "version" : "Version",
+        "build_time" : "BuildTime"
+      }
+    }
+  },
+  "component" : {
+    "grid" : {
+      "pagination" : {
+        "10l": "10 lines",
+        "20l": "20 lines",
+        "50l": "50 lines",
+        "100l": "100 lines"
+      }
+    }
+  },
+  "privilege" : {
+    "root" : {
+      "title" : "Super administrator",
+      "description" : ""
+    },
+    "grant": {
+      "title" : "Administrator",
+      "description" : ""
+    },
+    "write": {
+      "title" : "Write access",
+      "description" : ""
+    },
+    "read": {
+      "title" : "Read acces",
+      "description" : ""
+    },
+    "none": {
+      "title" : "No acces",
+      "description" : ""
+    }
+  }
+  
+}

@@ -1,0 +1,146 @@
+/************************************************************************************
+	TABLEAUX
+************************************************************************************/
+
+.table {
+	box-shadow: $sy-shadowed;
+	font-size: $sy-font-size-sm;
+	border-radius: 7px;
+}
+
+.table thead {
+	background-color: $sy-grid-thead-bg;
+	color: $sy-grid-thead-color;
+	cursor: pointer;
+	font-weight: $sy-font-weight-bold;
+}
+
+.table thead th {
+	border-right: 1px solid rgba(255,255,255,.15);
+}
+
+.table thead th:hover {
+	background-color: $sy-grid-thead-bg-hover;
+}
+
+
+.table th:first-child {
+    border-radius: 7px 0 0 0;
+}
+
+.table th:last-child {
+    border-radius: 0 7px 0 0;
+    border-right: 0;
+}
+
+.table th:first-child:last-child {
+    border-radius: 7px 7px 0 0;
+    border-right: 0;
+}
+
+.table thead th:focus,
+.table thead th:active {
+	background-color: $sy-grid-thead-bg-focus;
+}
+
+.table th {
+	font-weight: $sy-font-weight-bold;
+}
+
+.table td,
+.table th {
+    border-top: 1px solid $sy-grid-line-border-color;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: $sy-grid-line-bg-odd;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: $sy-grid-line-bg-even;
+}
+
+.table-striped tbody tr:hover {
+    background-color: $sy-grid-line-bg-hover;
+}
+
+.table td.action {
+    text-align: center;
+}
+
+.table td.action i,
+.table td.action .fa {
+    color: $sy-main-action-icon-color;
+}
+
+.table td.action i:hover,
+.table td.action .fa:hover,
+.table td.action:hover i,
+.table td.action:hover .fa {
+    color: $sy-main-action-icon-color-hover;
+}
+
+
+/************************************************************************************
+	FORM TABLE - Utilises pour afficher des formulaires - Ex : Page Mon compte
+************************************************************************************/
+
+.form-table {
+    width: 100%;
+}
+
+.form-table thead tr {
+    height: 35px;
+}
+
+.form-table th {
+    font-size: $sy-font-size-sm;
+    font-weight: $sy-font-weight-bold;
+    line-height: 1;
+    background-color: $sy-grid-thead-bg;
+    color: $sy-grid-thead-color;
+    border-right: 1px solid $sy-grid-thead-bg;
+    border-bottom: 1px solid $sy-grid-thead-bg;
+    padding: 15px;
+}
+
+.form-table th:first-child {
+    border-radius: 7px 0 0 0;
+}
+
+.form-table th:last-child {
+    border-radius: 0 7px 0 0;
+    border-right: 0;
+}
+
+.form-table th:first-child:last-child {
+    border-radius: 7px 7px 0 0;
+    border-right: 0;
+}
+
+.form-table tbody tr {
+    border-top: 1px solid $sy-grid-line-border-color;
+}
+
+.form-table tbody tr td {
+    padding: 10px 15px;
+    background-color: $sy-grid-line-bg-even;
+}
+
+.form-table td.action .btn-group,
+.form-table td.action .btn,
+.form-table td.action .dropdown-menu {
+	font-size: .9rem;
+	float: right;
+}
+
+/* icones dans les entetes */
+.form-table .btn-popin i {
+	font-size: $sy-font-size-nm;
+    color: rgba(255,255,255,.75);
+	margin-left: 5px;
+}
+
+.form-table .btn-popin i:hover {
+    color: $white;
+}

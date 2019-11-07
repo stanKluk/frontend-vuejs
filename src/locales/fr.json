@@ -1,0 +1,231 @@
+{
+  "header" : {
+    "menu" : {
+      "application" : {
+        "search" : {
+          "title": "Rechercher",
+          "document" : "Documents"
+        },
+        "components" : {
+          "aggrid" : "AG Grid"
+        }
+      },
+      "global" : {
+        "language" : {
+          "dropdown" : "Langage",
+          "en" : "EN",
+          "fr" : "FR"
+        }
+      },
+      "account" : {
+        "user" : {
+          "profile" : "Mon compte",
+          "enterprises" : "Entreprises",
+          "management" : {
+            "groups" : "Gestion des groupes",
+            "users" : "Gestion des utilisateurs"
+          }
+        }
+      }
+    }
+  },
+  "view" : {
+    "notFound" : {
+      "title" : "404 - Page non trouvée",
+      "body" : "La page que vous essayez de visualiser n'existe pas.",
+      "backlink" : "Retour à la page d'accueil"
+    },
+    "forbidden" : {
+      "title" : "403 - Droits insuffisants",
+      "body" : "Cette action n'est pas permise.",
+      "backlink" : "Retour à la page d'accueil"
+    },
+    "login" : {
+      "title" : "Bienvenue",
+      "input" : {
+        "username" : "Identifiant (ou email)",
+        "password" : "Mot de passe"
+      },
+      "button" : {
+        "login" : "Connexion"
+      },
+      "link": {
+        "help" : "Besoin d'aide",
+        "lost_username" : "J’ai perdu mon identifiant",
+        "lots_password" : "J’ai perdu mon mot de passe"
+      },
+      "message" : {
+        "required_fields" : "Les champs marqués d’un * sont obligatoires",
+        "authentication_failed" : "L'authentification a échoué"
+      },
+      "label" : {
+        "version" : "Version",
+        "build_time" : "BuildTime"
+      }
+    }
+  },
+  "component" : {
+    "grid" : {
+      "pagination" : {
+        "10l": "10 lignes",
+        "20l": "20 lignes",
+        "50l": "50 lignes",
+        "100l": "100 lignes",
+        "1000l": "1000 lignes"
+      }
+    }
+  },
+  "privilege" : {
+    "root" : {
+      "title" : "Super administrateur",
+      "description" : "Peut créer ou supprimer d'autres administrateurs"
+    },
+    "grant": {
+      "title" : "Administrateur",
+      "description" : "Peut autoriser les droits en lecture ou en écriture"
+    },
+    "write": {
+      "title" : "Droit d'écriture",
+      "description" : "Peut mettre à jour, et modifier les données"
+    },
+    "read": {
+      "title" : "Droit en lecture",
+      "description" : "A un droit de lecture sur les données"
+    },
+    "none": {
+      "title" : "Aucun",
+      "description" : "Aucun droit"
+    }
+  },
+  "docrepows" : {
+    "errors" : {
+      "2001" : "Le document est dans état non prévu ou non conforme",
+      "2002" : "Une donnée de la recherche n'est pas bonne",
+      "2003" : "Requête non valide",
+      "2404" : "Le document n'a pas pu être trouvé",
+      "3000" : "Erreur dans la base de données MongoDb",
+      "3001" : "Erreur dans la base de données Oracle",
+      "3002" : "Erreur disque dur sur le serveur",
+      "4000" : "Déserialisation impossible",
+      "4001" : "Sérialisation impossible",
+      "5000" : "Téléchargement à partir d'un hôte distant impossible",
+      "5001" : ""
+    }
+  },
+  "el": {
+    "colorpicker": {
+      "confirm": "OK",
+      "clear": "Effacer"
+    },
+    "datepicker": {
+      "now": "Maintenant",
+      "today": "Auj.",
+      "cancel": "Annuler",
+      "clear": "Effacer",
+      "confirm": "OK",
+      "selectDate": "Choisir date",
+      "selectTime": "Choisir horaire",
+      "startDate": "Date début",
+      "startTime": "Horaire début",
+      "endDate": "Date fin",
+      "endTime": "Horaire fin",
+      "prevYear": "Année précédente",
+      "nextYear": "Année suivante",
+      "prevMonth": "Mois précédent",
+      "nextMonth": "Mois suivant",
+      "year": "",
+      "month1": "Janvier",
+      "month2": "Février",
+      "month3": "Mars",
+      "month4": "Avril",
+      "month5": "Mai",
+      "month6": "Juin",
+      "month7": "Juillet",
+      "month8": "Août",
+      "month9": "Septembre",
+      "month10": "Octobre",
+      "month11": "Novembre",
+      "month12": "Décembre",
+      "weeks": {
+        "sun": "Dim",
+        "mon": "Lun",
+        "tue": "Mar",
+        "wed": "Mer",
+        "thu": "Jeu",
+        "fri": "Ven",
+        "sat": "Sam"
+      },
+      "months": {
+        "jan": "Jan",
+        "feb": "Fév",
+        "mar": "Mar",
+        "apr": "Avr",
+        "may": "Mai",
+        "jun": "Jun",
+        "jul": "Jul",
+        "aug": "Aoû",
+        "sep": "Sep",
+        "oct": "Oct",
+        "nov": "Nov",
+        "dec": "Déc"
+      }
+    },
+    "select": {
+      "loading": "Chargement",
+      "noMatch": "Aucune correspondance",
+      "noData": "Aucune donnée",
+      "placeholder": "Choisir"
+    },
+    "cascader": {
+      "noMatch": "Aucune correspondance",
+      "loading": "Chargement",
+      "placeholder": "Choisir",
+      "noData": "Aucune donnée"
+    },
+    "pagination": {
+      "goto": "Aller à",
+      "pagesize": "/page",
+      "total": "Total {total}",
+      "pageClassifier": ""
+    },
+    "messagebox": {
+      "confirm": "Confirmer",
+      "cancel": "Annuler",
+      "error": "Erreur"
+    },
+    "upload": {
+      "deleteTip": "Cliquer sur supprimer pour retirer le fichier",
+      "delete": "Supprimer",
+      "preview": "Aperçu",
+      "continue": "Continuer"
+    },
+    "table": {
+      "emptyText": "Aucune donnée",
+      "confirmFilter": "Confirmer",
+      "resetFilter": "Réinitialiser",
+      "clearFilter": "Tous",
+      "sumText": "Somme"
+    },
+    "tree": {
+      "emptyText": "Aucune donnée"
+    },
+    "transfer": {
+      "noMatch": "Aucune correspondance",
+      "noData": "Aucune donnée",
+      "titles": [
+        "Liste 1",
+        "Liste 2"
+      ],
+      "filterPlaceholder": "Entrer un mot clef",
+      "noCheckedFormat": "{total} elements",
+      "hasCheckedFormat": "{checked}/{total} coché(s)"
+    },
+    "image": {
+      "error": "FAILED"
+    },
+    "pageHeader": {
+      "title": "Back"
+    }
+  }
+
+}

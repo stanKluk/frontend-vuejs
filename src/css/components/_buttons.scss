@@ -1,0 +1,179 @@
+/************************************************************************************
+	BOUTONS
+************************************************************************************/
+
+button,
+.btn {
+    transition: $sy-link-transition;
+    outline: none !important;
+    cursor: pointer;
+}
+
+/* .btn {
+	padding: .45rem .85rem;
+} */
+
+.btn,
+.btn.dropdown-toggle,
+.btn:disabled:hover
+.btn.disabled:hover,
+.btn.btn-default:hover,
+.btn-toolbar .btn:hover,
+.btn-group.btn-group-toggle .btn,
+.btn-group-vertical .btn{
+	box-shadow: $sy-btn-box-shadow !important;
+    transition: $sy-link-transition;
+}
+
+.btn.disabled,
+.btn:disabled {
+    opacity: $sy-btn-opacity-disabled;
+}
+
+/*******************************
+*** Button Primary ***/
+
+.btn-primary,
+.btn-primary.disabled,
+.btn-primary:disabled {
+	color: $sy-btn-primary-color;
+	background-color: $sy-btn-primary-bg;
+	border: $sy-btn-primary-border;
+	font-weight: $sy-btn-font-weight;
+	transition: $sy-btn-primary-transition;
+}
+
+.btn-primary:hover {
+	background: $sy-btn-primary-bg-hover;
+	border-color: $sy-btn-primary-bg-hover;
+    box-shadow: $sy-btn-primary-box-shadow-hover !important;
+}
+
+.btn-primary:active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+    background-color: darken($primary,4%);
+    border-color: darken($primary,3%);
+}
+  
+/*******************************
+*** Button Secondary ***/
+
+.btn-secondary,
+.btn-secondary.disabled,
+.btn-secondary:disabled {
+	color: $sy-btn-secondary-color;
+	background-color: $sy-btn-secondary-bg;
+	border: $sy-btn-secondary-border;
+	font-weight: $sy-btn-font-weight;
+}
+  
+.btn-secondary:hover {
+	background: $sy-btn-secondary-bg-hover;
+	border-color: $sy-btn-secondary-bg-hover;
+}
+
+.btn-secondary:active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+    background-color: darken($sy-btn-secondary-bg-hover,8%);
+    border-color: darken($sy-btn-secondary-bg-hover,8%);
+}
+
+/*******************************
+*** Button Default ***/
+
+.btn-default,
+.btn-default.disabled,
+.btn-default:disabled {
+	color: $sy-btn-default-color;
+	background-color: $sy-btn-default-bg;
+    border-width: $sy-btn-default-border-width;
+    border-style: $sy-btn-default-border-style;
+    border-color: $sy-btn-default-border-color;
+}
+  
+.btn-default:hover,
+.btn-default:active,
+.btn-default:not(:disabled):not(.disabled):active,
+.btn-default:not(:disabled):not(.disabled).active,
+.show > .btn-default.dropdown-toggle {
+    background: $sy-btn-default-bg-hover;
+    color: $black;
+    border-color: $sy-main-border-color-ultra-light transparent transparent $sy-main-border-color-ultra-light;
+}
+
+/*******************************
+*** Button Link ***/
+
+.btn-link {
+	font-weight: $sy-font-weight-normal;
+	color: $sy-link-color;
+	text-decoration: none;
+	box-shadow: none !important;
+	text-decoration: none;
+}
+
+.btn-link:hover {
+    color: $sy-link-color-hover;
+	background: $sy-main-bg-selected;
+	text-decoration: none;
+	box-shadow: none !important;
+}
+
+.btn-link:focus,
+.btn-link.focus {
+	box-shadow: none;
+	text-decoration: none;
+}
+  
+.btn-link:disabled,
+.btn-link.disabled {
+    color: lighten($gray,5%);
+    pointer-events: none;
+}
+
+/*******************************
+*** Button Smooth ***/
+
+.btn-link.btn-smooth:hover {
+	color: $black;
+	background: $sy-main-bg-selected;
+    box-shadow: none !important;
+}
+
+.btn-link.btn-smooth {
+	color: $sy-body-color;
+}
+
+/*******************************
+*** Button Addons ***/
+
+.input-group-append .btn {
+	box-shadow: none !important;
+	border: none;
+    margin-top: 1px;
+}
+
+/*******************************
+*** Badges dans les boutons ***/
+
+.btn .badge {
+	padding: .2em .4em .25em .4em;
+	font-size: 75%;
+    font-weight: $sy-font-weight-bolder;
+    line-height: 1;
+}
+
+/*******************************
+*** Toolbar ***/
+
+/* @@@@@@@@@@@@@@@@@@@@@@ */
+
+@media (max-width: 991px) {
+	.btn-toolbar .btn {
+		margin-bottom: 5px;
+	}
+}

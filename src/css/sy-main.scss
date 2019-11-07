@@ -1,0 +1,27 @@
+@charset "utf-8";
+// Core variables
+@import 'abstracts/variables';
+// Core CSS
+@import 'base/base';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/dropdown';
+@import 'components/card';
+@import 'components/table';
+@import 'components/nav';
+@import 'components/modal';
+@import 'components/accordion';
+@import 'components/list';
+@import 'components/badge';
+@import 'components/tooltip';
+@import 'components/toast';
+@import 'components/alert';
+@import 'components/pagination';
+@import 'components/progress';
+@import 'layout/containers';
+@import 'layout/navigation';
+@import 'layout/sidebar';
+@import 'layout/footer';
+@import 'pages/form-page';
+@import 'pages/dashboard';
+@import 'pages/login';

@@ -1,0 +1,29 @@
+/************************************************************************************
+	PAGINATION
+************************************************************************************/
+
+.page-link {
+    color: $sy-btn-default-color;
+    border: 1px solid $sy-main-border-color-light;
+}
+
+.page-link:hover {
+    color: $sy-btn-default-color;
+    text-decoration: none;
+    background-color: $sy-main-bg-hover;
+    border-color: $sy-main-border-color-light;
+}
+
+.page-link:focus {
+    box-shadow: none;
+    background-color: $sy-main-bg-selected;
+}
+
+.page-item.active .page-link {
+    color: $black;
+    background-color: $sy-main-bg-selected;
+    border-color: $sy-main-bg-selected;
+}
+.page-link:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}

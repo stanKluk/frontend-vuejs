@@ -1,0 +1,256 @@
+/************************************************************************************
+	SIDEBAR - FILTRES
+************************************************************************************/
+
+/* Version slide */
+.filter-container {
+	display: block;
+    float: left;
+	position: fixed;
+	left: -310px;
+	width: 310px;
+	min-height: 100%;
+	transition: all 0.3s;
+	top: 120px;
+	z-index: 498;
+    background-color: $dark;
+}
+
+.filter-container.open {
+	left: 0;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 991px) {
+	.filter-container {
+		top: 100px;
+	}
+}
+
+/* Version statique */
+/* .filter-container {
+    display: block;
+    float: left;
+    position: relative;
+    background-color: $dark;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+	min-height: 797px;
+	width: 310px;
+} */
+
+/*******************************
+*** Boutons Top ***/
+
+.filter-top {
+    clear: both;
+    overflow: hidden;
+    background-color: $dark;
+    padding: 25px;
+}
+
+.filter-top button {
+    float: left;
+    position: relative;
+    text-align: left;
+    border: 0 none;
+    color: rgba(255, 255, 255, 1);
+    /* font-size: 13px; */
+    font-weight: 400;
+    width: auto;
+    height: 40px;
+    border-radius: $sy-main-border-radius;
+    background-color: $secondary;
+    padding-right: 14px;
+    padding-left: 14px;
+    margin-right: 5px;
+}
+
+.filter-top button span {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    line-height: 26px;
+    height: 26px;
+    width: 36px;
+    text-align: center;
+    border-left: 1px solid #888787;
+}
+
+.filter-top button.search {
+    width: auto;
+    background: $primary;
+    font-weight: 600;
+    color: #fff;
+    padding: 6px 12px;
+    margin-top: 5px;
+}
+
+.filter-top button.search:hover {
+    background: $sy-btn-primary-bg-hover !important;
+}
+
+.filter-top button.search span,
+.filter-top button.search i {
+    display: none;
+}
+
+.filter-top button.reinit {
+    margin-left: 0;
+    background: $sy-btn-default-bg;
+    border-width: $sy-btn-default-border-width;
+	border-style: $sy-btn-default-border-style;
+	border-color: $sy-btn-default-border-color;
+    margin-top: 5px;
+}
+
+.filter-top button.reinit:hover {
+    background: $sy-btn-default-bg-hover !important;
+}
+
+.filter-top button.reinit i,
+.filter-top button.reinit span {
+    font-size: 16px;
+    color: $sy-main-action-icon-color;
+}
+
+.filter-top button.reinit:hover i,
+.filter-top button.reinit:hover span {
+    font-size: 16px;
+    color: $sy-main-action-icon-color-hover;
+}
+
+.filter-top button.exit {
+    color: rgba(255, 255, 255, 0.5);
+    float: right;
+    position: absolute;
+    top: 4px;
+    right: -4px;
+    background: transparent;
+}
+
+.filter-top button.exit:hover {
+    color: rgba(255, 255, 255, 1);
+    transition: $sy-link-transition;
+}
+
+.filter-top button i,
+.filter-top button span {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    line-height: 26px;
+    height: 26px;
+    width: 36px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+}
+
+/*************************************
+*** Filtres - Composant Accordion ***/
+
+.filter-content .accordion {
+	border: none;
+}
+
+.filter-content .accordion .card {
+	box-shadow: none;
+	border-bottom: none;
+	border-radius: 0 !important;
+}
+
+.filter-content .accordion .card-header {
+    background-color: lighten($dark, 5%);
+	font-size: $sy-font-size-nm;
+	font-weight: $sy-font-weight-bold;
+	transition: $sy-link-transition;
+    color: rgba(255,255,255,.9);
+	border-bottom: 1px solid $dark;
+    border-radius: 0;
+    padding: .75rem 1.25rem .75rem 1.5rem;
+}
+
+
+.filter-content .accordion .card-header .open,
+.filter-content .accordion header.card-header.open {
+    border-bottom: 1px solid #3d3f42 !important;
+}
+
+/* Icones */
+.filter-content .accordion .card-header .icon {
+	position: absolute;
+	right: 20px;
+	color: rgba(255,255,255,.7);
+	font-size: $sy-font-size-xs;
+	font-weight: $sy-font-weight-normal;
+}
+
+.filter-content .accordion .card a[aria-expanded=true] .card-header:after  {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+	transition: $sy-link-transition;
+}
+
+.filter-content .accordion .card a[aria-expanded=false] .card-header:after {
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	transition: $sy-link-transition;
+}
+
+.filter-content .card-header:first-child {
+    border-radius: 0;
+}
+
+.filter-content .accordion .card:last-child {
+	border-bottom: 0;
+}
+
+.filter-content header > a {
+    text-decoration: none;
+}
+
+.filter-content .accordion .card-header:hover,
+.filter-content .accordion .card a[aria-expanded=true] .card-header {
+    background-color: darken($dark, 5%);
+    color: rgba(255,255,255,1);
+	border-bottom: 1px solid darken($dark, 5%);
+}
+
+/* Card Body */
+.filter-content .accordion .card-body {
+	border-bottom: 1px solid $dark;
+    background-color: darken($dark, 5%);
+	color: $white;
+}
+
+/*******************************
+*** Formulaires ***/
+
+.filter-content .accordion > .card {
+    overflow: visible;
+}
+
+.filter-content .form-group .form-control {
+    box-shadow: none;
+}
+
+.filter-content .form-group .btn,
+.filter-content .form-group .dropdown-menu {
+    font-size: .9rem;
+}
+
+/* Label */
+.filter-content .form-group label {
+    font-weight: $sy-font-weight-normal;
+}
+
+/* Checkbox + Radio */
+.filter-content .form-group .custom-control {
+    padding-bottom: 6px;
+}
+
+.filter-content .form-group .custom-control .custom-control-input:disabled~.custom-control-label {
+    color: rgba(255,255,255,.35);
+}

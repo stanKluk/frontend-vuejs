@@ -1,0 +1,111 @@
+/************************************************************************************
+	FORM CONTENT
+************************************************************************************/
+
+.form-content {
+    padding: 25px 35px 30px;
+    background: $sy-form-container-bg;
+    display: block;
+    border-radius: $sy-main-border-radius;
+    clear: both;
+}
+
+.form-content-top-pad10 {
+    padding: 10px 35px 30px;
+    background: $sy-form-container-bg;
+    display: block;
+    border-radius: $sy-main-border-radius;
+    clear: both;
+}
+
+.full-kiss-container .form-content {
+    padding: 0;
+}
+
+.no-bg .form-content {
+    background: $sy-form-container-bg;
+}
+
+.form-content .form-title {
+    padding-bottom: 1rem;
+}
+
+.form-content .text-title,
+.form-content .img-title {
+    text-align: right;
+	font-weight: $sy-font-weight-bold;
+}
+
+
+/* Textes */
+.form-content .txt {
+    padding: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Voir .list-primary */
+/* .form-content .txt ul {
+	list-style: none;
+	padding: 0;
+}
+
+.form-content .txt ul li {
+	padding-left: 20px;
+	margin-bottom: 4px;
+}
+
+.form-content .txt ul li:before {
+	content: '\f00c';
+	font-family: 'FontAwesome';
+	font-size: 12px;
+	color: $sy-secondary;
+	display: inline-block;
+	margin-left: -20px;
+	width: 20px;
+} */
+
+.form-content .txt p {
+    color: $sy-body-color;
+}
+
+.form-content fieldset {
+    margin: 0 0 0;
+}
+
+.form-content fieldset .row h2 {
+    margin: 0 0 10px;
+}
+
+.form-content .confirmation fieldset .row h2 {
+    margin: 0 0 5px;
+}
+
+.form-content .row.action {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.form-content .action-border {
+    padding-top: 30px;
+    border-top: 1px solid $sy-main-border-color;
+}
+
+.form-content .action-no-border {
+    padding-top: 30px;
+}
+
+@media (max-width: 991px) {
+    .form-content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-content {
+		border-radius: 0 !important;
+    }
+	.form-content .text-title {
+		text-align: left;
+	}
+}

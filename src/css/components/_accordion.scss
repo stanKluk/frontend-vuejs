@@ -1,0 +1,41 @@
+/************************************************************************************
+	ACCORDION
+************************************************************************************/
+
+.accordion {
+	border: 1px solid $sy-main-border-color-ultra-light;
+	border-radius: $sy-main-border-radius;
+}
+
+.accordion .card {
+	box-shadow: none;
+	border-bottom: 1px solid $sy-main-border-color-ultra-light;
+}
+
+.accordion .card:last-child {
+	border-bottom: none;
+}
+
+.accordion .card-header {
+	background-color: $white;
+	font-weight: $sy-font-weight-bold;
+	margin-bottom: 0 !important;
+	transition: $sy-link-transition;
+}
+
+.accordion .card-header:hover {
+	background-color: $sy-main-bg-hover;
+}
+
+.accordion .card-header .fa {
+	color: $sy-main-action-icon-color;
+}
+
+.accordion .card-header:hover .fa,
+.accordion .card-header .fa:hover {
+	color: $sy-main-action-icon-color-hover;
+}
+
+.accordion .card-body {
+	border-bottom: 1px solid $sy-main-border-color-ultra-light;
+}

@@ -1,0 +1,14 @@
+<b-container>
+    <b-row>
+      <b-col lg="12"><h1>{{pageTitle}}</h1></b-col>
+      <b-col lg="12"><h1>{{pageTitleUpper}}</h1></b-col>
+  </b-row>
+    <b-row>
+        <b-col lg="5">
+            <input v-model="pageTitle" type="text">
+        </b-col>
+        <b-col lg="5">
+            <b-button variant="primary" :pressed.sync="buttonChecked">{{buttonText}}</b-button>
+        </b-col>
+    </b-row>
+</b-container>

@@ -1,0 +1,44 @@
+/************************************************************************************
+	DROPDOWN
+************************************************************************************/
+
+.dropdown-item:hover {
+    background-color: $sy-main-bg-hover;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: $sy-body-color;
+    background-color: $sy-dropdown-menu-selected;
+}
+
+.dropdown-menu {
+	box-shadow: $sy-dropdown-menu-box-shadow;
+	border-color: $sy-main-border-color;
+}
+
+.dropdown-divider {
+    border-top: 1px solid $sy-main-border-color-ultra-light;
+}
+
+/*******************************
+*** Dropdown Select ***/
+
+.dropdown-select .dropdown-menu li {
+	padding: 4px 0 4px 20px;
+	cursor: pointer;
+}
+
+.dropdown-select .dropdown-menu li:hover {
+	background-color: $sy-dropdown-menu-hover;
+}
+
+.dropdown-select .dropdown-menu li a {
+	color: $sy-body-color;
+	font-weight: $sy-font-weight-normal;
+}
+
+.dropdown-select .dropdown-menu li:hover a {
+	color: $black;
+	text-decoration: none;
+}

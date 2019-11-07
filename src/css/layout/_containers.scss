@@ -1,0 +1,45 @@
+/************************************************************************************
+	CUSTOM CONTAINERS
+************************************************************************************/
+
+.small-kiss-container,
+.med-kiss-container,
+.large-kiss-container,
+.x-large-kiss-container,
+.full-kiss-container	{
+    margin: auto;
+}
+
+.small-kiss-container {
+    width: 430px;
+}
+
+.med-kiss-container {
+    width: 900px;
+}
+
+.large-kiss-container {
+    width: 950px;
+}
+
+.x-large-kiss-container {
+    width: 1170px;
+}
+
+.full-kiss-container {
+    width: 100%;
+}
+
+@media (max-width: 1199px) {
+	.x-large-kiss-container	{
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .small-kiss-container,
+    .med-kiss-container,
+    .large-kiss-container	{
+        width: 100%;
+    }
+}

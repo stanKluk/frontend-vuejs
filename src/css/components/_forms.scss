@@ -1,0 +1,162 @@
+/************************************************************************************
+	FORMS
+************************************************************************************/
+
+/*******************************
+*** Form-control ***/
+
+.form-control,
+.custom-file-label {
+    border: $sy-form-text-border;
+    border-bottom: $sy-form-text-border-bottom;
+    box-shadow: $sy-form-box-shadow;
+    transition: $sy-form-transition;
+	padding: .45rem .85rem;
+    display: block;
+}
+
+.form-control:focus,
+.custom-file-input:focus~.custom-file-label {
+	color: $sy-body-color;
+	border: $sy-form-border-focus;
+	box-shadow: $sy-form-box-shadow-focus;
+}
+
+.form-control::placeholder {
+	color: $sy-form-placeholder-color;
+}
+
+/*******************************
+*** Custom Input File ***/
+
+/* Classic */
+.custom-file-input,
+.custom-file-label::after {
+	cursor: pointer;
+}
+
+/* Button */
+.button-file-input {
+    height: 0;
+    display: none;
+	cursor: pointer;
+}
+
+/*******************************
+*** Select ***/
+
+select,
+select.form-control {
+	color: $sy-body-color;
+	background-color: $white;
+    border-width: $sy-btn-default-border-width;
+    border-style: $sy-btn-default-border-style;
+    border-color: $sy-btn-default-border-color !important;
+	box-shadow: $sy-dropdown-box-shadow !important;
+}
+
+select:focus,
+select.form-control:focus {
+    background: $sy-btn-default-bg-hover!important;
+    color: $black;
+	box-shadow: $sy-dropdown-box-shadow !important;
+}
+
+/*******************************
+*** Disabled + Readonly ***/
+
+.form-control:disabled,
+.form-control[readonly]  {
+	background: $sy-form-bg-disabled;
+    border: $sy-form-border-disabled;
+    color: $sy-body-color;
+    box-shadow: none;
+    cursor: default;
+}
+
+/*******************************
+*** Champs valides ***/
+
+.custom-select.is-valid,
+.form-control.is-valid,
+.was-validated .custom-select:valid,
+.was-validated .form-control:valid {
+    border-color: $success;
+}
+
+.custom-select.is-valid:focus,
+.form-control.is-valid:focus,
+.was-validated .custom-select:valid:focus,
+.was-validated .form-control:valid:focus {
+    border-color: $success;
+	box-shadow: $sy-form-box-shadow-focus;
+}
+
+.valid-feedback {
+    color: $success;
+}
+
+/*******************************
+*** Champs invalides ***/
+
+.custom-select.is-invalid,
+.form-control.is-invalid,
+.was-validated .custom-select:invalid,
+.was-validated .form-control:invalid {
+    border-color: $danger;
+}
+
+.custom-select.is-invalid:focus,
+.form-control.is-invalid:focus,
+.was-validated .custom-select:invalid:focus,
+.was-validated .form-control:invalid:focus {
+    border-color: $danger;
+	box-shadow: $sy-form-box-shadow-focus;
+}
+
+.invalid-feedback {
+    color: $danger;
+}
+
+/*******************************
+*** Custom Checkbox + Radio ***/
+
+.custom-control-input:hover~.custom-control-label {
+	cursor: pointer !important;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: $white;
+    border-color: $primary;
+    background-color: $primary;
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: none;
+}
+
+/*******************************
+*** Checkbox ***/
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: $primary;
+}
+.custom-control-input:checked~.custom-control-label::before {
+    color: $white;
+    background-color: $primary;
+}
+
+/*******************************
+*** Radio ***/
+
+.custom-radio .custom-control-input:checked~.custom-control-label::before {
+    background-color: $primary;
+}
+
+/*******************************
+*** Labels ***/
+
+label {
+    font-weight: $sy-font-weight-bold;
+}
+

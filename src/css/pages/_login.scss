@@ -1,0 +1,133 @@
+/************************************************************************************
+	LOGIN
+************************************************************************************/
+
+body.login {
+    padding-top: 60px;
+	background-image: url(../assets/images/bg/background.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px){
+	body.login {
+		padding-top: 10px;
+	}
+	body.login .small-kiss-container {
+		border-radius: $sy-main-border-radius !important;
+	}
+}
+
+/*******************************
+*** Titre ***/
+
+.login .form-title {
+    margin: 0 0 1em;
+    max-width: 40% !important;
+    height: 1em;
+    line-height: 1em;
+}
+
+@media (max-width: 767px){
+	.login .form-title {
+		padding-top: 0;
+	}
+}
+
+/*******************************
+*** Logo + Langue  ***/
+
+.login .logo {
+    background: url(../assets/images/logo-sy.svg) left top/190px 69px no-repeat;
+    background-position-y: 20px;
+    padding: 0;
+}
+
+.login .logo header {
+    display: inline-block;
+    width: 100%;
+    margin-top: 50px;
+    clear: both;
+}
+
+/* Dropdown Langues */
+.login .logo header .btn-group {
+    float: right;
+	margin-bottom: 8px;
+}
+
+.login .logo header .btn-group .dropdown-menu {
+    min-width: 3.8rem !important;
+}
+
+.login .logo header .btn-group .dropdown-menu li,
+.login .logo header .btn-group .dropdown-menu li a {
+    font-weight: $sy-font-weight-bold;
+}
+
+/*******************************
+*** Lien Besoin d aide  ***/
+
+.login .login-help {
+    color: $white;
+    float: right;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.login .login-help:hover,
+.login .login-help:focus {
+    color: $white;
+    text-decoration: $sy-link-hover-decoration;
+    cursor: pointer;
+}
+
+/*******************************
+*** Liens mdp+id perdu ***/
+
+.login .form-content .action ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.login .form-content .action ul li {
+    font-weight: $sy-font-weight-normal;
+    font-size: $sy-font-size-xs;
+    transition: $sy-link-transition;
+}
+
+/*******************************
+*** Formulaire  ***/
+
+.login .form-content [class*="col-"] {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.login .form-content .field {
+	position: relative;
+}
+
+/*******************************
+*** Version  ***/
+
+.login .version {
+    margin: 0;
+    text-align: right;
+    font-size: $sy-font-size-xxxs;
+    color: $gray;
+}
+
+/*******************************
+*** Mention Champs requis  ***/
+
+@media (max-width: 767px) {
+	.login .required-container .required-fields {
+		background: transparent;
+		color: $white;
+	}
+}

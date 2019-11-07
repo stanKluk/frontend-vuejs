@@ -1,0 +1,36 @@
+/************************************************************************************
+	FENETRE MODALE
+************************************************************************************/
+
+.modal-content {
+    background-color: $sy-modal-bg;
+}
+
+.close {
+    color: $sy-body-color;
+    text-decoration: none;
+    opacity: .35;
+    transition: $sy-link-transition;
+}
+
+.close:focus,
+.close:hover {
+    color: $black;
+    text-decoration: none;
+    opacity: .75;
+    outline: none;
+}
+
+.modal-content {
+    border: none;
+}
+
+.modal-header,
+.modal-footer{
+	border:none;
+}
+
+.modal-dialog {
+    border: none;
+}
+

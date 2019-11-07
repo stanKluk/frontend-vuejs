@@ -1,0 +1,555 @@
+/***************************************************/
+/*GRID*/
+/***************************************************/
+
+.grid {
+    width: 100%;
+    height: 100%;
+}
+
+/** GRID CONTAINER **/
+
+.grid-container {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 0 55px 40px 55px;
+}
+
+.grid-container .grid-top-btn .filter .btn.btn-primary,
+.grid-container .grid-top-btn .filter .btn.blue {
+    background: $primary;
+    font-weight: 600;
+    height: inherit;
+}
+
+.grid-container .grid-top-filter .list-filter {
+    padding: 0;
+}
+
+.grid-container .grid-top-btn > div > span,
+.grid-container .grid-top-filter > div > span {
+    position: relative;
+    color: $gray;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 35px;
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .grid-container {
+        padding: 0 25px 30px 25px;
+    }
+}
+
+@media (max-width: 991px) {
+    .grid-container {
+        padding: 10px;
+        padding-top: 0;
+    }
+}
+
+.conf-col .dropdown-menu > li > a {
+    padding: 10px 30px;
+}
+
+.conf-col .dropdown-menu > li > a:hover,
+.conf-col .dropdown-menu > li > a:focus {
+    background-color: $sy-btn-default-bg-hover;
+    background-image: none;
+    filter: none;
+}
+
+.conf-col ol button {
+    padding: 0 40px 0 12px;
+    border: 0 none;
+    background: #fff;
+    color: #666;
+    border-color: #ededed;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 30px;
+    border-radius: 0;
+    height: 36px;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.2) !important;
+}
+
+/** TABLEAU **/
+
+.ag-theme-balham .ag-root {
+    border: none;
+    box-shadow: $shadowed;
+}
+
+/** ENTETES DES TABLEAUX **/
+
+.ag-theme-balham {
+    font-family: $sy-body-font-family;
+}
+
+.ag-theme-balham .ag-header {
+    color: $sy-grid-thead-color;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    background-color: $sy-grid-thead-bg;
+}
+
+.ag-theme-balham .ag-header-cell:hover {
+    background: $sy-grid-thead-bg-hover;
+    transition: $sy-link-transition;
+}
+
+.ag-theme-balham .ag-header-cell:active,
+.ag-theme-balham .ag-header-cell:focus,
+.ag-theme-balham .ag-header-cell-moving {
+    background: $sy-grid-thead-bg-focus;
+    transition: $sy-link-transition;
+}
+
+/* Bordures des colonnes de l'entête */
+.ag-theme-balham .ag-header-cell::after,
+.ag-theme-balham .ag-header-group-cell::after {
+    border-right: none;
+}
+
+.ag-theme-balham .ag-header-cell {
+    border-right: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+/* Icone et Numéro de Tri */
+.ag-theme-balham .ag-header-cell-label .ag-header-icon {
+    position: absolute;
+    right: 12px;
+    font-size: 10px;
+    opacity: 0.65;
+}
+
+.ag-theme-balham .ag-header-cell-label .ag-header-icon.ag-sort-order {
+	padding-top: 2px;
+}
+
+.ag-theme-balham .ag-header-cell-label span {
+    margin-right: 7px;
+}
+
+.ag-theme-balham .ag-header-icon .ag-icon {
+    color: $icon-color;
+}
+
+/** LIGNES DES TABLEAUX **/
+
+/* Couleurs alternées des lignes */
+.ag-theme-balham .ag-row-odd {
+    background-color: $sy-grid-line-bg-odd;
+}
+
+.ag-theme-balham .ag-row-even {
+    background-color: $sy-grid-line-bg-even;
+}
+
+/* Couleurs des lignes au rollover */
+.ag-theme-balham .ag-row.ag-row-hover:not(.grid-row-disabled),
+.ag-theme-balham .ag-row.ag-row-hover-none.ag-row-hover {
+    cursor: pointer;
+    background: $sy-grid-line-bg-hover !important;
+    color: $sy-body-color;
+}
+
+.ag-theme-balham .ag-row.ag-row-hover-none.ag-row-hover {
+    cursor: default;
+}
+
+.grid-row-disabled {
+    cursor: default;
+}
+
+/* Bordures des lignes */
+.ag-theme-balham .ag-row {
+    border-color: $sy-grid-line-border-color;
+}
+
+/* Fix pour la premiere et la derniere ligne */
+.ag-theme-balham .ag-row {
+    border-bottom: none;
+}
+
+/** AFFICHAGE DU NOMBRE DE DOCUMENT **/
+
+.filter .filter-count {
+    display: inline-block;
+    margin-left: 15px;
+    color: $sy-body-color;
+    font-weight: 700;
+}
+
+/** TOOLBAR **/
+
+/* Conteneur */
+
+.grid-top-btn {
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.grid-top-btn .filter {
+    text-align: left;
+}
+
+.grid-top-btn .conf-col {
+    padding-right: 15px !important;
+}
+
+/* SY Toolbar */
+
+.sy-toolbar {
+    height: 36px;
+}
+
+.sy-toolbar.sy-toolbar-page {
+    min-height: 60px;
+}
+
+.sy-toolbar > * {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.sy-toolbar > *:first-child {
+    margin-left: 0;
+}
+
+.sy-toolbar > *:last-child {
+    margin-right: 0;
+}
+
+.sy-toolbar .btn,
+.sy-toolbar .btn-action {
+    display: inline-block;
+    height: $sy-form-height;
+}
+
+@media (max-width: 767px) {
+    .sy-toolbar > * {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+	.sy-toolbar.sy-toolbar-page {
+		height: auto;
+	}
+    .grid-top-btn {
+        text-align: left;
+    }
+    .grid-top-btn .filter {
+        padding-bottom: 10px;
+    }
+}
+
+/** GRID **/
+
+.ui-grid-cell-contents {
+    padding: 10px;
+	padding-left: 0;
+    line-height: 30px;
+    border: 0px none;
+}
+
+.ui-grid-cell {
+    border: 0px none;
+    border-bottom: 1px solid #f1f1f1 !important;
+    background: #fff !important;
+}
+
+.grid-container .grid-top-filter {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+    .grid-container .grid-top-filter {
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+}
+
+.grid-container .grid-top-filter .list-filter {
+    line-height: 40px;
+}
+
+.grid-container .grid-top-filter > div > span > span {
+    font-size: 13px;
+}
+
+.grid-top-filter kiss-filter-label span .filter-label {
+    display: inline-block;
+    color: #fff;
+    background-color: darken($primary, 5%);
+    height: 24px;
+    line-height: 24px;
+    padding-left: 10px;
+    margin-right: 5px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 13px;
+}
+
+/** GRID ICON **/
+/* Icones d'actions dans les Tableaux */
+
+.ui-grid-cell > span {
+    display: inline-block;
+    line-height: 30px;
+    height: 50px;
+    padding: 10px;
+}
+
+.ui-grid-cell .link:not(.not-allowed):hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.cell-bold {
+    font-weight: bold;
+}
+
+.ag-theme-balham .ag-header-cell {
+    border-right: 0;
+}
+
+/* .ag-theme-balham .ag-cell,
+.ag-theme-balham .ag-header-cell,
+.ag-theme-balham .ag-header-group-cell {
+    padding-left: 20px;
+    padding-right: 20px;
+} */
+
+.ag-cell i,
+.ag-cell button {
+    color: $sy-main-action-icon-color;
+    font-size: $sy-font-size-nm;
+}
+
+.ag-cell i:hover,
+.ag-cell button:hover {
+    color: $sy-main-action-icon-color-hover !important;
+}
+
+/* .link-icon i,
+.link-icon .icon-myfont-arrowdown {
+    vertical-align: middle;
+    color: ;
+} */
+
+.link-icon:hover i,
+.link-icon:hover .icon-myfont-arrowdown {
+    color: $sy-main-action-icon-color-hover !important;
+}
+
+.ui-grid-cell.link-icon .ui-grid-cell-contents:hover {
+    background-color: #ff0077;
+}
+
+/* BOTTOM BUTTON */
+
+.grid-bottom {
+    display: block;
+    position: relative;
+    float: left;
+    margin-top: -25px;
+}
+
+.grid-bottom span {
+    display: inline-block;
+}
+
+.grid-bottom span.btn {
+    border: 0px none;
+    background-color: $sy-btn-default-bg;
+    color: $sy-main-action-icon-color;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 0px 10px;
+    line-height: 24px;
+    border-radius: 0px;
+    height: inherit;
+}
+
+.grid-bottom span.btn.active {
+    background: $primary;
+    color: $sy-btn-default-bg;
+}
+
+.grid-bottom .export-grid,
+.grid-bottom .pagination-grid {
+    display: inline-block;
+    color: $sy-main-action-icon-color;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.grid-bottom .export-grid {
+    margin-left: 25px;
+}
+
+.pagination-grid {
+    display: inline-block;
+}
+
+/* Boutons de la pagination */
+.pagination-control button {
+    color: $sy-main-action-icon-color !important;
+    /* border-width: $sy-btn-default-border-width !important;
+	border-style: $sy-btn-default-border-style !important;
+	border-color: $sy-btn-default-border-color !important; */
+    border: 1px solid transparent;
+}
+
+.pagination-control button:hover,
+.pagination-control button:focus,
+.pagination-control button:active {
+    color: $sy-main-action-icon-color-hover !important;
+    background: $sy-btn-default-bg-hover !important;
+    text-decoration: none;
+}
+
+/* TOOLTIP SUR LES STATUS */
+
+.tooltip-grid .tooltip-inner {
+    background-color: $tooltip-bg !important;
+    max-width: 250px;
+    padding: 8px;
+}
+
+.tooltip.right.tooltip-grid {
+    margin-left: -20px;
+}
+
+.tooltip.top.tooltip-grid {
+    margin-top: 20px;
+}
+
+.tooltip.bottom.tooltip-grid {
+    margin-top: -20px;
+}
+
+.tooltip.right.tooltip-grid .tooltip-arrow {
+    border-right-color: $tooltip-border-color;
+}
+
+.tooltip.top.tooltip-grid .tooltip-arrow {
+    border-top-color: $tooltip-border-color;
+}
+
+.tooltip.bottom.tooltip-grid .tooltip-arrow {
+    border-bottom-color: $tooltip-border-color;
+}
+
+.grid-row-italic-opacity {
+    font-style: italic;
+    opacity: 0.5;
+}
+
+.grid-row-italic {
+    font-style: italic;
+}
+
+.status-comment-cell-contents {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    height: 50px;
+    border: 0px none;
+}
+
+.delete-column-button {
+    box-shadow: none;
+    color: black;
+    background: 0 0;
+    color: #626262;
+}
+
+.delete-column-button:hover {
+    color: #000 !important;
+}
+
+.ag-root-wrapper {
+    box-shadow: 0 1px 2px rgba(0,0,0,.25);
+}
+
+/*******************************
+*** Filtres selectionnes ***/
+
+/*** Conteneur ***/
+.grid-container .grid-top-filter {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*** Badge filtre ***/
+.filter-label {
+    display: inline-block;
+    background-color: $sy-badge-default-bg;
+    color: $sy-badge-default-color;
+    height: 26px;
+    line-height: 23px;
+    padding-left: 14px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+    font-weight: $sy-font-weight-bold;
+    border-radius: 26px;
+    font-size: $sy-font-size-sm;
+    border: $sy-badge-default-border;
+    border-left: none;
+	cursor: pointer;
+}
+
+.filter-label button {
+    border-left: none;
+    display: block;
+    float: right;
+    cursor: pointer;
+    height: 23px;
+    width: 27px;
+    line-height: 23px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: $sy-font-size-lg;
+    text-align: center;
+	color: lighten($sy-main-action-icon-color, 25%);
+}
+
+.filter-label:hover {
+    background-color: $sy-btn-default-bg-hover;
+	transition: $sy-link-transition;
+}
+
+.filter-label:hover,
+.filter-label:hover button {
+    color: $sy-body-color;
+}
+
+@media (max-width: 767px) {
+	.grid-container .grid-top-filter {
+		margin-top: 22px;
+	}
+}
+
+/*** Badge filtre - B4 Alert ***/
+.alert.filter-label {
+	padding: 0 40px 0 14px;
+	text-align: left;
+}
+
+.alert.filter-label .close {
+	padding: 0;
+	opacity: 1 !important;
+	color: lighten($sy-main-action-icon-color, 25%);
+}

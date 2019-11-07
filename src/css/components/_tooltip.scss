@@ -1,0 +1,39 @@
+/************************************************************************************
+	TOOLTIPS - INFOBULLES
+************************************************************************************/
+
+.tooltip.show {
+    opacity: 1;
+}
+
+.bs-tooltip-top .arrow::before,
+.bs-tooltip-auto[x-placement^='top'] .arrow::before,
+.bs-tooltip-right .arrow::before,
+.bs-tooltip-auto[x-placement^='right'] .arrow::before,
+.bs-tooltip-bottom .arrow::before,
+.bs-tooltip-auto[x-placement^='bottom'] .arrow::before,
+.bs-tooltip-left .arrow::before,
+.bs-tooltip-auto[x-placement^='left'] .arrow::before {
+    border-color: $sy-tooltip-border-color !important;
+}
+
+.tooltip-inner {
+    max-width: 250px;
+    padding: 0.35rem 0.65rem;
+    color: $sy-tooltip-color;
+    background-color: $sy-tooltip-bg;
+    border-radius: 0.3rem;
+}
+
+
+/************************************************************************************
+	POPOVER
+************************************************************************************/
+
+.popover {
+    border: 1px solid $sy-main-border-color-light;
+}
+
+.popover-header {
+    background-color: $sy-main-bg-hover;
+}

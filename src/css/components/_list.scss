@@ -1,0 +1,44 @@
+/************************************************************************************
+	LIST GROUP
+************************************************************************************/
+
+.list-group-item {
+    border: 1px solid $sy-main-border-color-ultra-light;
+}
+
+.list-group-item.active {
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.list-group-item .badge {
+	padding: .3em .5em;
+    font-size: 75%;
+    font-weight: $sy-font-weight-bolder;
+    line-height: 1.2;
+}
+
+
+/************************************************************************************
+	LISTES
+************************************************************************************/
+
+.list-primary {
+	list-style: none;
+	padding: 0;
+}
+
+.list-primary li {
+	padding-left: 20px;
+	margin-bottom: 4px;
+}
+
+.list-primary li:before {
+	content: '\f00c';
+	font-family: 'FontAwesome';
+	font-size: $sy-font-size-xxs;
+	color: $secondary;
+	display: inline-block;
+	margin-left: -20px;
+	width: 20px;
+}
